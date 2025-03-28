@@ -1,0 +1,59 @@
+@use '@styles/_font.scss';
+
+.drawer {
+  :global {
+    .ant-drawer-content {
+      padding: 0.5rem 1rem;
+    }
+
+    .ant-drawer-header {
+      padding: 0;
+      border-bottom: none;
+    }
+
+    .ant-drawer-close {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ant-drawer-header-title {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+      border-bottom: none;
+    }
+
+    .ant-drawer-title {
+      font-size: font.$lg24;
+      font-weight: 500;
+
+      & > * > .ant-typography {
+        font-size: font.$lg24;
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-drawer-body {
+      padding: 0;
+    }
+
+    .ant-drawer-content-wrapper {
+      min-width: 22rem;
+    }
+  }
+}
+
+.drawer_header_pd {
+  :global {
+    .ant-drawer-header-title {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5rem;
+}

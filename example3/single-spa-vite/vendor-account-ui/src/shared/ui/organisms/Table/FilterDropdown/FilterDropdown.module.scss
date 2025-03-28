@@ -1,0 +1,19 @@
+@use '@styles/_colors.scss';
+
+.dropdown_container {
+  padding: 0.5rem;
+}
+
+.icon_filtered {
+  color: colors.$primary_blue;
+}
+
+.search_btn {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.25rem;
+  &:disabled {
+    border: none;
+  }
+}

@@ -1,0 +1,9 @@
+@use '@styles/_colors.scss';
+
+.required_mark {
+  color: colors.$color_error;
+}
+
+.full_width_container {
+  width: 100%;
+}

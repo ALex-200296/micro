@@ -1,0 +1,14 @@
+@use '@styles/_margin.scss';
+
+.container {
+  margin-top: margin.$margin_3;
+}
+
+.item {
+  margin-top: margin.$margin_1;
+}
+
+.divider {
+  margin: 0;
+  margin-top: margin.$margin_1;
+}

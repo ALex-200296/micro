@@ -1,0 +1,21 @@
+@use '@styles/_colors.scss';
+@use '@styles/_border.scss';
+
+.login_box {
+  @include border.border(border);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2rem;
+  max-width: 25rem;
+  transform: translate(-50%, -50%);
+  border: 1px solid colors.$line_default;
+  border-radius: border.$border_radius_lg;
+  background-color: colors.$primary_white;
+}
+
+.btn_back {
+  top: 12%;
+  left: -5%;
+  position: absolute;
+}

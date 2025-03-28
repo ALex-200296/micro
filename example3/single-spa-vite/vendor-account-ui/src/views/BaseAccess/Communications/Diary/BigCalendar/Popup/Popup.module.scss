@@ -1,0 +1,18 @@
+.popup {
+  min-width: 18.75rem;
+
+  :global {
+    .ant-popover-inner-content {
+      max-height: 20rem;
+      overflow: auto;
+    }
+
+    .ant-popover-title {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.divider {
+  margin: 0.3125rem 0;
+}

@@ -1,0 +1,9 @@
+@use '@styles/_font.scss';
+
+.range_picker {
+  width: 100%;
+
+  & input::placeholder {
+    font-family: font.$font_family;
+  }
+}

@@ -1,0 +1,13 @@
+@use '@styles/_font.scss';
+
+.label_button {
+  padding: 0;
+}
+
+.label_text {
+  font-size: font.$sm14;
+}
+
+.icon_disabled {
+  border: none;
+}

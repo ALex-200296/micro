@@ -1,0 +1,40 @@
+@use '@styles/_animation.scss';
+
+.alert {
+  flex-wrap: wrap;
+  height: min-content;
+  @include animation.showBlockTransition();
+
+  &>div.ant-alert.ant-alert-content {
+    flex: 2 1 10rem;
+    min-width: min-content;
+  }
+
+  &>div.ant-alert.ant-alert-action {
+    flex: 1 2;
+    width: content-box;
+    min-width: min-content;
+  }
+
+  &>div>a {
+    font-size: inherit;
+  }
+
+  &>div>div {
+    word-wrap: normal;
+    margin-right: 0.3rem;
+    min-width: fit-content;
+  }
+
+  :global {
+    .ant-alert-icon {
+      display: flex;
+      align-self: flex-start;
+      margin-top: 0.3rem;
+    }
+  }
+
+  .link {
+    white-space: nowrap;
+  }
+}

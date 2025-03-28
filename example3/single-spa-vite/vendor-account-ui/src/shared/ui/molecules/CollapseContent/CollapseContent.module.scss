@@ -1,0 +1,12 @@
+.desc_content {
+  :global {
+    .ant-descriptions-row {
+      border: none!important;
+      padding-bottom: 0.5rem;
+    }
+    .ant-descriptions-view {
+      border: none!important;
+      border-radius: 0;
+    }
+  }
+}

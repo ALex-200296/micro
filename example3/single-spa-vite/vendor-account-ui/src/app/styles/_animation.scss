@@ -1,0 +1,95 @@
+@mixin backPulse {
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: color, background-color, border, opacity, text-decoration-color;
+}
+
+@mixin showBlockTransition {
+  opacity: 0;
+  transition: 0.3s;
+  animation: show 0.3s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@mixin growBlockTransition {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  animation: grow 0.2s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  @keyframes grow {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@mixin blinkTransition ($bgColor, $textColor) {
+  @include backPulse();
+  transition: all 0.2s ease-in-out;
+  animation: blink 0.7s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  @keyframes blink {
+  0% {
+    fill-opacity: rgba($bgColor, 0);
+  }
+    50% {
+      background-color: rgba($bgColor, 1);
+      box-shadow: $bgColor 0 0 0.5rem 0.1rem;
+      color: $textColor;
+    }
+    100% {
+      fill-opacity: rgba($bgColor, 0);
+    }
+  }
+}
+
+@mixin floatBlock {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@mixin growBlock {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}

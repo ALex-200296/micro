@@ -1,0 +1,62 @@
+@use '@styles/_colors.scss';
+@use '@styles/_font.scss';
+
+.space {
+  width: 100%;
+}
+
+.descriptions {
+  font-size: font.$font_size;
+
+  :global {
+    .ant-descriptions-header {
+      margin-bottom: 0;
+    }
+
+    .ant-descriptions-row > td {
+      padding-bottom: 0;
+      padding-top: 0.5rem;
+    }
+
+    .ant-descriptions-item-label {
+      line-height: 1;
+      color: colors.$primary_black;
+
+      &::after {
+        margin-inline: 0.125rem 0.3125rem;
+      }
+    }
+
+    .ant-descriptions-item-content {
+      line-height: 1;
+    }
+  }
+}
+
+.file_input {
+  :global {
+    .ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-name {
+      padding: 0 0.5rem 0 0;
+    }
+
+    .ant-form-item-control-input {
+      order: -1;
+    }
+
+    .ant-form-item-explain-error {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.btn {
+  margin-top: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.alert {
+  display: inline-flex;
+  white-space: pre-wrap;
+}

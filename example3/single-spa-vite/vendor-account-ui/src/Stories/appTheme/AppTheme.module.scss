@@ -1,0 +1,46 @@
+@use '@styles/_animation.scss';
+@use '@styles/_colors.scss';
+
+.block {
+  width: 10rem;
+  text-align: center;
+  padding: 0.5rem;
+  &:hover {
+    background-color: colors.$background_blue;
+    color: colors.$primary_blue;
+  }
+}
+
+.showBlockTransition {
+  &:hover {
+    @include animation.showBlockTransition();
+  }
+}
+
+.backPulse {
+  &:hover {
+    @include animation.backPulse();
+  }
+}
+
+.floatBlock {
+  @include animation.floatBlock();
+}
+
+.growBlock {
+  @include animation.growBlock();
+}
+
+.growBlockTransition {
+  &:hover {
+    @include animation.growBlockTransition();
+  }
+}
+
+.blinkTransition {
+  &:hover {
+    background-color: unset;
+    color: unset;
+    @include animation.blinkTransition(colors.$color_success_background, colors.$color_success)
+  }
+}

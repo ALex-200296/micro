@@ -1,0 +1,19 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+
+.consignee_link {
+  padding-left: 0.25rem;
+  font-size: font.$sm14;
+}
+
+.flex_content {
+  max-width: 21.875rem;
+ }
+
+.text {
+  font-size: font.$sm14;
+}
+
+.close_icon {
+  padding: 0;
+}

@@ -1,0 +1,84 @@
+@use '@styles/_colors.scss';
+@use '@styles/_animation.scss';
+@use '@styles/_border.scss';
+
+.secondary_info {
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.secondary_info_xs {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+.secondary_info_sm {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+.secondary_info_md {
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+.secondary_info_lg {
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: 1fr;
+}
+
+.partition_info_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: colors.$primary_black;
+  margin-bottom: 0.5rem;
+}
+
+.partition_info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  background-color: colors.$background_grey;
+  max-width: fit-content;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  color: colors.$typography_dark_grey;
+  border-radius: border.$border_radius;
+  height: 100%;
+}
+
+.partition_info_long_block_md {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  height: fit-content;
+}
+
+.partition_info_long_block_lg {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.partition_title_link {
+  color: colors.$primary_blue_hover;
+
+  &:visited {
+    color: colors.$primary_blue_hover;
+  }
+
+  &:hover {
+    color: colors.$primary_blue;
+    @include animation.backPulse();
+  }
+
+  & > .partition_info_title {
+    @include animation.floatBlock();
+  }
+}

@@ -1,0 +1,39 @@
+@use '@styles/_colors.scss';
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  & > div {
+    flex: 0 0 100%;
+    &:nth-of-type(5) {
+      flex-grow: 1;
+    }
+    &:nth-of-type(6) {
+      flex-basis: 48.5%;
+      flex-grow: 1;
+    }
+    &:nth-of-type(7) {
+      flex-basis: 48.5%;
+      flex-grow: 1;
+    }
+  }
+}
+
+.responsible_select_option {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  & > * {
+    opacity: 0.5;
+  }
+  & > *:first-child {
+    opacity: unset;
+  }
+}
+
+.title {
+  padding-bottom: 0.5rem;
+}

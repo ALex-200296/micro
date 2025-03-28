@@ -1,0 +1,78 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+@use '@styles/_animation.scss';
+
+.list_item {
+  padding: 0 0 0 0.25rem !important;
+  font-size: font.$sm14;
+  border-radius: 0.25rem;
+  &:hover {
+    background-color: colors.$background_grey;
+    @include animation.backPulse();
+  }
+}
+.list_item_value {
+  max-width: 18.625rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.list {
+  max-height: 18.75rem;
+  overflow: auto;
+}
+
+.list_item_value {
+  max-width: 18.625rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.icon {
+  font-size: font.$sm14!important;
+}
+
+.tag_content {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+  & > span:first-letter {
+    text-transform: capitalize;
+  }
+  & > .label {
+    opacity: 0.7;
+  }
+}
+
+.value {
+  max-width: 16.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag_neutral {
+  :global {
+    .anticon svg {
+      fill: colors.$primary_black;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.tag {
+  display: flex;
+  align-content: center;
+  border-color: transparent;
+  margin: 0;
+}
+
+.tag_content_neutral {
+  & > span {
+    color: colors.$primary_black;
+  }
+}

@@ -1,0 +1,50 @@
+@use '@styles/_colors.scss';
+
+.dragger {
+  :global {
+    .ant-upload-list .ant-upload-list-item {
+      height: 2rem;
+      margin-top: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  & > div {
+    max-height: 12.5rem;
+    overflow-y: auto;
+
+    & > * {
+      & div {
+        display: none;
+        padding: 0.5rem;
+      }
+    }
+
+    & > span {
+      border-radius: 0.5rem;
+      background-color: colors.$background_blue;
+    }
+  }
+}
+
+.dragger_disabled {
+  & > div:first-child {
+    cursor: not-allowed;
+
+    & span {
+      pointer-events: none;
+    }
+  }
+}
+
+.main_text {
+  display: block;
+  text-align: center;
+  color: colors.$primary_blue;
+}
+
+.hint_text {
+  color: colors.$typography_dark_grey;
+}

@@ -1,0 +1,19 @@
+@use '@styles/_colors.scss';
+@use '@styles/_border.scss';
+
+.box {
+  :global {
+    .ant-modal-content {
+      padding: 1rem 2rem 2rem;
+      width: 100%;
+    }
+
+    .ant-modal-close {
+      margin-top: 0.125rem;
+    }
+  }
+}
+
+.title {
+  padding-bottom: 1rem;
+}

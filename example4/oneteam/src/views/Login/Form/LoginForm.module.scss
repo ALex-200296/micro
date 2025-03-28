@@ -1,0 +1,23 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+.title {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.error_message {
+    font-size: font.$sm12;
+    color: colors.$color_error;
+}
+
+.btn {
+    width: 100%;
+}

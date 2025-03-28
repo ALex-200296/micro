@@ -1,0 +1,20 @@
+@use '@styles/_colors.scss';
+
+.content {
+  padding: 1.5rem;
+}
+
+.file_upload_cell {
+  max-width: 25vw;
+  width: 25vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loading_text {
+  font-weight: 500;
+}
+
+.loading_icon {
+  color: colors.$typography_dark_grey;
+}

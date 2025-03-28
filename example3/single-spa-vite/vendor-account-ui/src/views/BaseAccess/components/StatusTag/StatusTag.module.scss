@@ -1,0 +1,5 @@
+@use '@styles/_colors.scss';
+.tag_color {
+  color: colors.$primary_black;
+  font-weight: 500;
+}

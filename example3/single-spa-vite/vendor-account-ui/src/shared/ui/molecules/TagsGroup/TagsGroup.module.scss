@@ -1,0 +1,15 @@
+@use '@styles/_colors.scss';
+
+.space {
+  &:empty {
+    display: none;
+  }
+}
+
+.popover {
+  :global {
+    .ant-popover-inner {
+      padding: 0.25rem;
+    }
+  }
+}

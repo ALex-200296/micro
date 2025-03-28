@@ -1,0 +1,134 @@
+@use '@styles/_colors.scss';
+@use '@styles/_zIndex.scss';
+@use '@styles/_font.scss';
+@use '@styles/_shadows.scss';
+@use '@styles/_margin.scss';
+
+html {
+  font-size: font.$font_size + px;
+}
+
+* {
+  scrollbar-color: colors.$line_light colors.$primary_white !important;
+  scrollbar-width: thin;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: colors.$primary_black;
+  font-family: font.$font_family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  text-underline-offset: 0.34rem;
+}
+
+input,
+select {
+  font-size: 100%;
+}
+
+.notistack-Snackbar {
+  & .anticon {
+    margin-right: 0.3rem !important;
+  }
+
+  & .notistack-MuiContent {
+    color: colors.$primary_white !important;
+    box-shadow: shadows.$shadow_medium !important;
+  }
+
+  & .notistack-MuiContent-error {
+    background-color: colors.$colors_error_background !important;
+    color: colors.$primary_black !important;
+
+    & .anticon {
+      color: colors.$color_error !important;
+    }
+  }
+
+  & .notistack-MuiContent-success {
+    background-color: colors.$color_success_background !important;
+    color: colors.$primary_black !important;
+
+    & .anticon {
+      color: colors.$color_success !important;
+    }
+  }
+
+  & .notistack-MuiContent-warning {
+    background-color: colors.$color_warning_background !important;
+    color: colors.$primary_black !important;
+
+    & .anticon {
+      color: colors.$color_warning !important;
+    }
+  }
+}
+
+.notification_icon {
+  font-size: font.$md16;
+}
+
+.ant-form-item-has-error {
+  .ant-form-item-label {
+    &>label {
+      color: colors.$color_error;
+    }
+
+    &>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+      color: colors.$color_error;
+    }
+  }
+}
+
+.ant-form-item-with-help .ant-form-item-explain div:not(.ant-form-item-explain-error) {
+  transition: none !important;
+}
+
+.margin_4_title {
+  margin-bottom: margin.$margin_4;
+}
+
+.margin_4_tabs {
+  margin-bottom: margin.$margin_4;
+}
+
+.margin_4_toolbar {
+  margin-bottom: margin.$margin_4;
+}
+
+.margin_3_tags {
+  margin-bottom: margin.$margin_3;
+}
+
+.spin_flex {
+  display: flex;
+}
+
+.spin_justify_center {
+  justify-content: center;
+}
+
+.spin_align_items {
+  align-items: center;
+}

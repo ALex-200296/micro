@@ -1,0 +1,72 @@
+@use '@styles/_colors.scss';
+@use '@styles/_animation.scss';
+@use '@styles/_font.scss';
+
+.popover {
+  min-width: 12.5rem;
+  width: 13vw;
+
+  :global {
+    .ant-popover-inner {
+      padding: 5px;
+    }
+  }
+}
+
+.content {
+  max-height: 13.2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.list_title {
+  font-size: font.$sm14;
+}
+
+.list_item_clickable {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem;
+  height: 2rem;
+  @include animation.backPulse();
+
+  &:hover {
+    background-color: colors.$background_grey;
+  }
+
+  :global {
+    .ant-list-item-meta .ant-list-item-meta-content {
+      margin: 8px;
+    }
+  }
+}
+
+.list_item_selected {
+  background-color: colors.$background_blue;
+  font-weight: 500;
+}
+
+.add_button_space {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  margin: 0.5rem;
+
+  :global {
+    .ant-space-item {
+      width: 100%;
+    }
+  }
+}
+
+.child_content {
+  cursor: pointer;
+}
+.add_button {
+  font-size: font.$sm14 !important;
+  width: inherit;
+}
+
+.remove_button {
+  margin-right: -0.625rem;
+}

@@ -1,0 +1,150 @@
+@use '@styles/_zIndex.scss';
+@use '@styles/_colors.scss';
+@use '@styles/_font.scss';
+
+.item_default {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: inherit;
+
+  :global {
+    .ant-form-item-explain-error {
+      font-size: font.$sm12;
+    }
+
+    .ant-picker-status-error input::placeholder {
+      color: colors.$color_error;
+    }
+
+    .ant-input-status-error input::placeholder {
+      color: colors.$color_error;
+    }
+
+    .ant-form-item-explain {
+      font-size: font.$sm12;
+      color: colors.$typography_grey;
+    }
+
+    .ant-form-item-extra {
+      font-size: font.$sm12;
+      color: colors.$typography_grey;
+    }
+  }
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: inherit;
+
+  :global {
+    .ant-form-item-label {
+      position: absolute;
+      left: 12px;
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      pointer-events: none;
+      transition: 0.2s ease all;
+      z-index: zIndex.$stand;
+
+      &>label {
+        display: contents;
+        color: colors.$typography_grey;
+        transition: 0.2s ease all;
+      }
+
+      &>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        color: colors.$typography_grey;
+        margin-inline-end: 2px;
+      }
+    }
+
+    .ant-form-item-explain-error {
+      font-size: font.$sm12;
+    }
+
+    .ant-picker-status-error input::placeholder {
+      color: colors.$color_error;
+    }
+
+    .ant-input-status-error::placeholder {
+      color: colors.$color_error;
+    }
+
+    .ant-form-item-explain {
+      margin-left: 0.625rem;
+      font-size: font.$sm12;
+      color: colors.$typography_grey;
+    }
+
+    .ant-form-item-extra {
+      margin-left: 0.625rem;
+      font-size: font.$sm12;
+      color: colors.$typography_grey;
+    }
+  }
+}
+
+.item_not_empty {
+  :global {
+    .ant-row {
+      background-color: inherit;
+    }
+
+    .ant-form-item-label {
+      height: 0.9375rem;
+      background-color: colors.$primary_white;
+
+      &>label {
+        display: contents;
+        color: colors.$typography_grey;
+        font-size: font.$sm12 !important;
+      }
+
+      &>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        color: colors.$typography_grey;
+      }
+
+      &>label.ant-form-item-no-colon::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.item_focus {
+  :global {
+    .ant-row {
+      background-color: inherit;
+    }
+
+    .ant-form-item-label {
+      height: 0.9375rem;
+      background-color: colors.$primary_white;
+
+      &>label {
+        display: contents;
+        color: colors.$primary_blue;
+        font-size: font.$sm12 !important;
+      }
+
+      &>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        color: colors.$primary_blue;
+      }
+
+      &>label.ant-form-item-no-colon::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.item_mobile {
+  :global {
+    .ant-form-item-label {
+      height: 1rem;
+    }
+  }
+}

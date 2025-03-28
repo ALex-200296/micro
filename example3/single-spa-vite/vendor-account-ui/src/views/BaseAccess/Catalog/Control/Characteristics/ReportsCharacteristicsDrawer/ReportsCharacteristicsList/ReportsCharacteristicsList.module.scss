@@ -1,0 +1,15 @@
+.list {
+  :global {
+    .ant-pagination .ant-pagination-item-active {
+      border: none;
+    }
+  }
+}
+
+.list_item {
+  padding-left: 0 !important;
+}
+
+.list_item_link {
+  padding-bottom: 0.225rem;
+}

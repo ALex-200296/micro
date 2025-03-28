@@ -1,0 +1,9 @@
+.result {
+  padding: 0;
+
+  :global {
+    .ant-result-title {
+      font-weight: 500;
+    }
+  }
+}

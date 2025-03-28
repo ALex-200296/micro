@@ -1,0 +1,31 @@
+.list {
+  :global {
+    .ant-pagination .ant-pagination-item-active {
+      border: none;
+    }
+  }
+}
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.list_item_info {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    max-width: 60%;
+  }
+}
+
+.filter {
+  margin-top: 0.5rem;
+}
+
+.link {
+  padding-bottom: 0.225rem;
+}

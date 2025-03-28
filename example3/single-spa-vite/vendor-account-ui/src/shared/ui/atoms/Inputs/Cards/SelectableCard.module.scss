@@ -1,0 +1,59 @@
+@use '@styles/_shadows.scss';
+@use '@styles/_colors.scss';
+@use '@styles/_font.scss';
+
+.custom_card {
+  width: 100%;
+  padding: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  box-shadow: shadows.$shadow_small;
+  transition: border-color 400ms ease-out;
+
+  .text_container {
+    flex: 1;
+    gap: 0.25rem;
+    padding-right: 2rem;
+  }
+
+  .text_main {
+    font-size: font.$sm14;
+  }
+
+  .text_secondary {
+    font-size: font.$sm12;
+  }
+
+  .right_icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  &_disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  &_checked {
+    border-color: colors.$primary_blue_hover;
+  }
+
+  &:hover {
+    border-color: colors.$primary_blue_hover;
+  }
+
+  :global {
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+
+  .text_main {
+    font-size: font.$sm14;
+  }
+
+  .text_secondary {
+    font-size: font.$sm12;
+  }
+}

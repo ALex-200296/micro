@@ -1,0 +1,16 @@
+@use '@styles/_font.scss';
+
+.title {
+  margin-top: 1.5rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+drower_button {
+  margin-top: 1rem;
+}

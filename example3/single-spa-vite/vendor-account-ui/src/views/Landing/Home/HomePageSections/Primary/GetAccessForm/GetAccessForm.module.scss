@@ -1,0 +1,19 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  align-content: center;
+  padding-top: 1rem;
+}
+
+.alert {
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

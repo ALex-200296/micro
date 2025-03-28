@@ -1,0 +1,26 @@
+@use '@styles/_colors.scss';
+
+.collapse {
+  :global {
+    .ant-collapse-item >.ant-collapse-content >.ant-collapse-content-box {
+      padding: 0 2rem 0.7rem 2rem;
+    }
+    .ant-collapse-item >.ant-collapse-header {
+      padding: 0.25rem 0.75rem;
+    }
+  }
+}
+
+.bordered_ghost_collapse {
+  :global {
+    .ant-collapse-item {
+      border-bottom: 1px solid colors.$line_default;
+      &:last-child {
+        border-radius: unset;
+      }
+      &:first-child {
+        border-top: 1px solid colors.$line_default;
+      }
+    }
+  }
+}

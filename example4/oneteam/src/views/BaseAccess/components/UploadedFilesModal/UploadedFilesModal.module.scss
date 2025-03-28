@@ -1,0 +1,53 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+
+:global {
+  div.ant-modal-content {
+    min-width: 43.75rem;
+  }
+}
+
+.count {
+  margin: 1rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.uploaded {
+  color: colors.$color_success;
+  font-size: font.$lg24;
+}
+
+.info {
+  font-size: font.$md16;
+  font-weight: 500;
+}
+
+.files {
+  color: colors.$color_error;
+}
+
+.devider {
+  margin: 0.375rem;
+}
+
+.alert {
+  font-size: font.$sm14;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.alert:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.alert_icon {
+  font-size: font.$lg24;
+}
+
+.files_container {
+  max-height: 13rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

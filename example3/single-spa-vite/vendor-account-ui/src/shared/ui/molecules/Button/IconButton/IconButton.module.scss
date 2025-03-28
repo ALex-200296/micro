@@ -1,0 +1,45 @@
+@use '@styles/_colors.scss';
+
+.badge {
+  height: 80%;
+  margin-left: 0.2rem;
+}
+
+.transparent_badge {
+  :global {
+    .ant-badge-count-sm {
+      background: colors.$typography_dark_grey !important;
+    }
+  }
+}
+.primary_badge {
+  :global {
+    .ant-badge-count-sm {
+      color: colors.$primary_blue;
+      background: colors.$primary_white !important;
+    }
+  }
+}
+
+.text_badge, .dashed_badge, .link_badge, .default_badge{
+  :global {
+    .ant-badge-count-sm {
+      background: colors.$primary_blue !important;
+    }
+  }
+}
+
+
+.badge_override {
+  :global {
+    .ant-badge-count-sm {
+      font-weight: 600;
+    }
+    .ant-badge-multiple-words {
+      padding: 0;
+    }
+    .ant-scroll-number-only-unit {
+      padding-right: 0.0425rem;
+    }
+  }
+}

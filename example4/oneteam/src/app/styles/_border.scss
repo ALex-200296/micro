@@ -1,0 +1,9 @@
+@use 'colors';
+
+$border_radius: 0.3125rem;
+$border_radius_lg: 1rem;
+$antd_button_border_radius: 0.25rem;
+
+@mixin border($property, $br_width: 1px, $br_style: solid, $color: colors.$line_default) {
+  #{$property}: $br_width $br_style $color;
+}

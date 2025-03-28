@@ -1,0 +1,36 @@
+@use '@styles/_colors.scss';
+@use '@styles/_zIndex.scss';
+@use '@styles/_border.scss';
+@use '@styles/_font.scss';
+
+.popover_header {
+  padding: 0.5rem 1rem;
+  margin: -0.75rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: colors.$primary_white;
+  @include colors.color_calendar_statuses($attribute: 'background-color', $top_mod: false);
+}
+
+.popover_content {
+  padding-top: 1rem;
+
+  :global {
+    .ant-descriptions-view>table {
+      width: max-content;
+    }
+  }
+}
+
+.popover_children {
+  width: inherit;
+  height: inherit;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tag_color {
+  color: colors.$primary_black;
+  font-weight: 500;
+}

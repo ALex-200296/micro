@@ -1,0 +1,11 @@
+@use '@styles/_zIndex.scss';
+
+.spin {
+  z-index: zIndex.$screenLock;
+
+  :global {
+    .ant-spin-dot-holder {
+      color: unset !important
+    }
+  }
+}

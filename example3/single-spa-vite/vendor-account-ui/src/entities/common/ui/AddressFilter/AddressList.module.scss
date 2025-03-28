@@ -1,0 +1,51 @@
+@use '@styles/_colors.scss';
+@use '@styles/_animation.scss';
+@use '@styles/_font.scss';
+
+.list_item {
+  font-size: font.$sm14;
+}
+
+.list_item_clickable {
+  cursor: pointer;
+  &:hover {
+    background-color: colors.$background_grey;
+    @include animation.backPulse();
+  }
+}
+
+.list_wrapper {
+  max-height: 40vh;
+  overflow: auto;
+}
+
+.list_header {
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+}
+
+.list_header_address {
+  font-size: font.$sm14;
+  color: colors.$typography_dark_grey;
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.list_item_disabled {
+  opacity: 0.4;
+}
+
+.list {
+  :global {
+    .ant-list-header {
+      position: sticky;
+      top: 0;
+      background-color: colors.$primary_white;
+      z-index: 100;
+      padding-block: 0.3rem;
+    }
+  }
+}

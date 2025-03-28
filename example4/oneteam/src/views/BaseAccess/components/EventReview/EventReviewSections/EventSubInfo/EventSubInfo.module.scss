@@ -1,0 +1,8 @@
+.card {
+  & > div {
+    max-height: 4.25rem;
+    overflow: auto;
+    padding: 0!important;
+  }
+  padding: 0.5rem;
+}

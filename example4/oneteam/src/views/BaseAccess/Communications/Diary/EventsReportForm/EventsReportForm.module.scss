@@ -1,0 +1,25 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.range_picker {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.file_link {
+  color: colors.$primary_blue;
+  padding: 0;
+}

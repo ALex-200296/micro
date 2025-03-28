@@ -1,0 +1,14 @@
+.table {
+  :global {
+
+    .ant-table-content {
+      .ant-table-thead {
+        .ant-table-cell {
+          &:first-child {
+            width: 32rem;
+          }
+        }
+      }
+    }
+  }
+}

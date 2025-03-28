@@ -1,0 +1,42 @@
+@use '@styles/_colors.scss';
+
+.descriptions {
+  margin-top: 1rem;
+}
+
+.descriptions_small {
+  margin-top: 1rem;
+
+  :global {
+    .ant-descriptions-header {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@mixin flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  @include flex-center;
+  height: 5rem;
+  color: colors.$primary_white;
+  background-color: colors.$primary_blue_hover;
+}
+
+.base_layout_content {
+  @include flex-center;
+  height: 100%;
+  color: colors.$primary_white;
+  background-color: colors.$primary_blue_hover;
+}
+
+.base_layout_footer {
+  @include flex-center;
+  color: colors.$primary_white;
+  background-color: colors.$background_blue;
+}

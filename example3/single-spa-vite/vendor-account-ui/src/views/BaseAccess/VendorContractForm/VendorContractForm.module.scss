@@ -1,0 +1,75 @@
+@use '@styles/_colors.scss';
+
+.alert {
+  margin: 1rem 0;
+}
+
+.steps {
+  margin: 1rem 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &>*:last-child {
+    align-self: end;
+    margin-top: 1rem;
+  }
+}
+
+.space_container {
+  width: 100%;
+  padding: 0 2vw;
+}
+
+.content {
+  margin: 1rem 0;
+}
+
+.agreement_checkbox {
+  width: 49%;
+}
+
+.half_width {
+  width: 50%;
+}
+
+.flex_half_width {
+  flex: 0 0 49.75%;
+}
+
+.date {
+  flex: 1 0 24%;
+}
+
+.fullwidth_element {
+  width: 100%;
+}
+
+.result_container {
+  width: 100%;
+  height: 35vh;
+
+  &>div {
+    padding: 0;
+  }
+}
+
+.radio_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.icon {
+  margin-left: 0.2rem;
+
+  &:hover {
+    color: colors.$primary_blue;
+    cursor: pointer;
+  }
+}

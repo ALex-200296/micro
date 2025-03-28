@@ -1,0 +1,90 @@
+@use '@styles/_font.scss';
+
+.primary_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.primary_info_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: max-content;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.primary_info_section_xs {
+  & > h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  & > img {
+    display: none;
+  }
+
+  & > button {
+    width: 100%;
+    padding: 1.5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.primary_info_section_sm {
+  & > h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  & > img {
+    display: none;
+  }
+
+  & > button {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.primary_info_section_md {
+  width: calc(87vw / 2);
+
+  & > img {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    margin-left: 60px;
+    font-size: font.$lg44;
+  }
+
+  & > h1 {
+    width: 90%;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.primary_info_section_lg {
+  width: calc(87vw / 2);
+
+  & > img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  & > h1 {
+    width: 90%;
+    font-weight: 600;
+    font-size: font.$lg44;
+  }
+}
+
+.get_access_button {
+  margin-top: 1rem;
+}

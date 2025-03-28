@@ -1,0 +1,7 @@
+.table {
+  :global {
+    .ant-table-tbody .ant-table-expanded-row>td {
+      max-width: 0vw;
+    }
+  }
+}

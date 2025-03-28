@@ -1,0 +1,71 @@
+@use '@styles/_colors.scss';
+@use '@styles/_animation.scss';
+@use '@styles/_font.scss';
+
+.status {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  gap: 0.2rem;
+  cursor: pointer;
+  @include animation.backPulse();
+  text-underline-offset: 0.34rem;
+  text-decoration: underline colors.$line_default 0.031rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .link {
+    color: colors.$primary_black;
+
+    &:hover {
+      color: colors.$primary_black;
+    }
+  }
+}
+
+.file_name {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  color: colors.$primary_black;
+}
+
+.uploaded {
+  color: colors.$color_success;
+}
+
+.protocol {
+  color: colors.$primary_blue;
+}
+
+.error {
+  color: colors.$color_error;
+}
+
+.update {
+  color: colors.$color_warning;
+}
+
+.status_cell {
+  :global {
+    span.ant-badge-status-text {
+      font-size: font.$sm14 !important;
+    }
+  }
+
+  display: flex;
+  align-items: center;
+  width: max-content;
+
+  & > span:last-child {
+    overflow-wrap: break-word;
+    max-width: 12vw;
+  }
+}
+
+.uploaded_file {
+  padding-bottom: 0.2rem;
+}

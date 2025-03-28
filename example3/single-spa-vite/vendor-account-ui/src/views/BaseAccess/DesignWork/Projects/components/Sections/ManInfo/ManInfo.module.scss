@@ -1,0 +1,29 @@
+.body_row {
+  & td:first-child,
+  td:last-child {
+    max-width: 15rem;
+  }
+}
+
+.desc {
+  :global {
+    div.ant-descriptions-view {
+      border-color: transparent!important;
+      &.ant-descriptions-row >.ant-descriptions-item-label {
+        background-color: unset;
+        padding: 0;
+      }
+    }
+    .ant-descriptions-bordered > div.ant-descriptions-view {
+      border-color: transparent;
+      &.ant-descriptions-row >.ant-descriptions-item-label {
+        background-color: unset;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.divider {
+  margin: 0;
+}

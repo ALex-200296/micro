@@ -1,0 +1,22 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+
+.text {
+  font-size: font.$sm14;
+}
+
+.link {
+  font-size: font.$sm14;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.icon {
+  margin: 0 0.25em;
+}
+
+.description {
+  margin-right: 0.25rem;
+  font-size: font.$sm14;
+  color: colors.$typography_dark_grey;
+}

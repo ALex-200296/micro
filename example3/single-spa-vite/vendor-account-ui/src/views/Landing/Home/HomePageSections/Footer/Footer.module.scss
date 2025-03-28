@@ -1,0 +1,82 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+@use '@styles/_animation.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 5vw;
+  margin-bottom: 0.7rem;
+  max-height: 12rem;
+}
+
+.divider {
+  margin: 0.7rem 0;
+}
+
+.rights_and_media {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.rights {
+  flex-basis: 60vw;
+  font-size: font.$sm10;
+  line-height: 1rem;
+}
+
+.lastString {
+  display: inline-block;
+  margin-top: 0.7rem;
+}
+
+.logo_icons {
+  fill: colors.$brand_etm_blue;
+  width: 50%;
+  height: 70%;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social_media_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  & > button {
+    & > span > svg {
+      fill: colors.$primary_blue;
+      & >path:first-child {
+        fill: colors.$primary_blue;
+      }
+    }
+  }
+}
+
+.iconButton {
+  border-color: transparent;
+  box-shadow: unset;
+}
+
+.two_colored_icons {
+  &:hover {
+    border-color: transparent;
+  }
+  & > span {
+    & > svg {
+      fill: colors.$primary_blue;
+      & > path:last-child {
+        fill: transparent;
+      }
+      & > g > polygon:last-child {
+        fill: colors.$primary_white;
+      }
+    }
+  }
+}

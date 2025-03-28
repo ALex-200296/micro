@@ -1,0 +1,7 @@
+.pagination {
+  :global {
+    li.ant-pagination-item.ant-pagination-item-active {
+      border: none;
+    }
+  }
+}

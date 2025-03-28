@@ -1,0 +1,18 @@
+.button_select_all {
+  width: fit-content;
+}
+
+.container {
+  padding: 0.2rem 0;
+}
+
+.dropdown_container {
+  & > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.drawer_button {
+  margin-top: 1rem;
+}

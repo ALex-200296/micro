@@ -1,0 +1,28 @@
+@use '@styles/_colors.scss';
+
+.btn {
+  &:disabled {
+    border-color: colors.$line_default;
+  }
+}
+
+.link {
+  color: colors.$typography_dark_grey;
+  &:hover {
+    color: colors.$primary_blue;
+    :global {
+      .ant-badge-count-sm {
+        background: colors.$primary_blue !important;
+      }
+    }
+  }
+}
+
+.default {
+  &:hover {
+    background: colors.$background_blue !important;
+    &:disabled {
+      background-color: colors.$background_grey;
+    }
+  }
+}

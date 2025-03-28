@@ -1,0 +1,33 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+
+.header_icon_delete {
+  border: none;
+}
+
+.transfer_header {
+  font-weight: 500;
+}
+
+.transfet_title {
+  font-size: font.$sm14;
+  font-weight: 500;
+}
+
+.count_label {
+  font-size: font.$sm14;
+}
+
+.icon_disabled {
+  border: none;
+}
+
+.transfer_form {
+  :global {
+    .ant-form-item-explain {
+      position: absolute;
+      top: -1.5rem;
+      font-size: font.$sm12;
+    }
+  }
+}

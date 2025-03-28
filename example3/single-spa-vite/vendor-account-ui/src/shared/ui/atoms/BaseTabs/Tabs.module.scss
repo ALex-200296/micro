@@ -1,0 +1,17 @@
+.tabs {
+  :global {
+    .ant-tabs-tab-btn {
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+    .ant-tabs-tab {
+      padding-top: 0;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

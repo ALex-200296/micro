@@ -1,0 +1,9 @@
+.tabs {
+  height: 100%;
+  & > div:last-child >div {
+    height: 100%;
+    & > div {
+      height: 100%;
+    }
+  }
+}

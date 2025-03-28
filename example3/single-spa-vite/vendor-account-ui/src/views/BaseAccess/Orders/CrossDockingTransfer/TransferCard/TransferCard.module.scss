@@ -1,0 +1,19 @@
+@use '@styles/_animation.scss';
+@use '@styles/_colors.scss';
+
+.icon_division {
+  border: none;
+}
+
+.card {
+  @include animation.growBlockTransition();
+}
+
+.animate_count {
+  border-radius: 0.3rem;
+  @include animation.blinkTransition(colors.$background_blue, colors.$primary_blue);
+}
+
+.goods_count {
+  padding: 0.2rem;
+}

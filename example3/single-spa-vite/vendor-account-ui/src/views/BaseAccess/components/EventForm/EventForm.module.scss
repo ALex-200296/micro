@@ -1,0 +1,51 @@
+@use '@styles/_colors.scss';
+@use '@styles/_zIndex.scss';
+
+.form {
+  width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  :global {
+    .ant-input-group-wrapper .ant-input-group-addon button {
+      z-index: zIndex.$stand + 1;
+    }
+  }
+
+  & > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.project_form_item {
+  :global {
+    .ant-input-group-addon button {
+      &:disabled {
+        border-color: inherit;
+      }
+    }
+  }
+}
+
+.file {
+  color: colors.$typography_grey;
+
+  &:hover {
+    background-color: red;
+  }
+
+  :global {
+    .ant-upload-list-item-actions {
+      display: none;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

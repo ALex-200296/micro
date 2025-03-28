@@ -1,0 +1,54 @@
+@use '@styles/colors.scss';
+
+.space_container {
+  width: 100%;
+}
+
+.fullwidth_element {
+  width: 100%;
+}
+
+.button {
+  align-self: end;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+.form {
+  width: 50vw;
+  &.md {
+    width: 70vw;
+  }
+  &.sm {
+    width: 90%;
+  }
+  &.xs {
+    width: 100%;
+  }
+}
+
+.result_container {
+  width: 100%;
+  height: 80vh;
+
+  & > div {
+    padding: 0;
+  }
+}
+
+.alert {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.alert_upload {
+  width: fit-content;
+}
+
+.loader {
+  max-height: unset !important;
+}
+
+.help_icon {
+  color: colors.$typography_dark_grey
+}

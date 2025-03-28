@@ -1,0 +1,42 @@
+@use '@styles/animation';
+
+.form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+  justify-content: flex-end;
+}
+
+.date_picker_form_item {
+  flex-basis: 48.5%;
+  flex-grow: 1;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &>*:last-child>* {
+    @include animation.showBlockTransition();
+  }
+}
+
+.responsible_select_option {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  &>* {
+    opacity: 0.5;
+  }
+
+  &>*:first-child {
+    opacity: unset;
+  }
+}

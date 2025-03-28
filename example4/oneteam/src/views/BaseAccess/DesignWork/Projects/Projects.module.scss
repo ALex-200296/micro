@@ -1,0 +1,23 @@
+@use '@styles/_font.scss';
+
+.reg_code_cell {
+  max-width: 15ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 0.2rem;
+}
+
+.req_type_cell {
+  text-transform: capitalize;
+}
+
+.table_cell {
+  font-size: font.$sm14;
+}
+
+.projects_table {
+  table {
+    width: 110rem !important;
+  }
+}
+

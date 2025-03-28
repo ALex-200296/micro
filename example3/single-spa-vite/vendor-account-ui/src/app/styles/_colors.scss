@@ -1,0 +1,56 @@
+$brand_etm_blue: #034da2;
+
+$primary_blue: #0260e8;
+$primary_blue_hover: #0254cb;
+$primary_black: #21283a;
+$primary_black_hover: rgba(255, 255, 255, 0.1);
+$primary_white: #ffffff;
+
+$background_grey: #eff2f6;
+$background_blue: #ddebff;
+
+$color_error: #eb5757;
+$colors_error_background: #fae4e1;
+$color_warning: #f2994a;
+$color_warning_background: #faf3e1;
+$color_success: #219653;
+$color_success_background: #dff4e8;
+
+$typography_dark_grey: #79859e;
+$typography_grey: #adbace;
+$typography_light_grey: #d8dee9;
+
+$line_default: $typography_light_grey;
+$line_light: #e8ecf3;
+$line_hover: #8994a9;
+
+$state_color_success: $color_success;
+$state_color_error: $color_error;
+$state_color_appoint: #f6c327;
+$state_color_incomplete: $typography_dark_grey;
+$state_color_in_progress: #0851bb;
+$state_color_common: $typography_light_grey;
+
+$calendar_statuses: (
+  comp_succ: $state_color_success,
+  comp_unsucc: $state_color_common,
+  comp_part: $state_color_common,
+  appoint: $state_color_appoint,
+  uncomplete: $state_color_incomplete,
+  fail: $state_color_common,
+  in_progress: $state_color_in_progress,
+);
+
+@mixin color_calendar_statuses($prefix: '.', $top_mod: true, $attribute: 'color') {
+  @each $name, $color in $calendar_statuses {
+    @if $top_mod {
+      #{$prefix}#{$name} {
+        #{$attribute}: $color;
+      }
+    } @else {
+      &#{$prefix}#{$name} {
+        #{$attribute}: $color;
+      }
+    }
+  }
+}

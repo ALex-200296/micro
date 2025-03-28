@@ -1,0 +1,46 @@
+@use '@styles/_colors.scss';
+
+.select_cell {
+  :global {
+    .ant-select.ant-select-in-form-item {
+      width: 13rem;
+    }
+  }
+}
+.datepicker_extra_footer {
+  :global {
+    .ant-picker-footer {
+      display: flex !important;
+      flex-direction: column-reverse !important;
+    }
+    .ant-picker-footer-extra {
+      border-top: 1px solid colors.$line_light;
+    }
+  }
+}
+
+.date_cell {
+  width: 8rem;
+}
+
+.productDivision_cell {
+  background-color: unset;
+}
+
+.form_item {
+  background-color: inherit;
+}
+
+.expandable_order_info_table {
+  table {
+    width: 100rem !important;
+  }
+}
+
+.checkbox_divider {
+  margin: 0;
+}
+
+.checkbox {
+  padding: 0.5rem;
+}

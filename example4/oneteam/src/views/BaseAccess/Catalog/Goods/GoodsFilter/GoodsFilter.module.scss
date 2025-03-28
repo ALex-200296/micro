@@ -1,0 +1,13 @@
+.switch_content {
+  :global {
+    .ant-form-item-control-input-content {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.switch_form_item {
+  width: auto;
+  margin-right: 0.5rem;
+}

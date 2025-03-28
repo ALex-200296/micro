@@ -1,0 +1,12 @@
+@use '@styles/_font.scss';
+@use '@styles/_colors.scss';
+
+.empty_message_text {
+  font-size: font.$sm14;
+  color: colors.$primary_black;
+  white-space: pre-wrap;
+}
+
+.no_content_icon {
+  font-size: 400%;
+}

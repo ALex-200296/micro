@@ -1,0 +1,38 @@
+{
+    "extends": "ts-config-single-spa",
+    "compilerOptions": {
+      "target": "ESNext",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "jsx": "react-jsx",
+      "declarationDir": "dist",
+      "types": ["node"],
+      "downlevelIteration": true,
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      // "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "paths": {
+        "@components/*": ["./src/components/*"],
+        "@shared/*": ["./src/shared/*"],
+        "@features/*": ["./src/features/*"],
+        "@entities/*": ["./src/entities/*"],
+        "@app/*": ["./src/app/*"],
+        "@middleware/*": ["./src/middleware/*"],
+        "@store/*": ["./src/app/store/*"],
+        "@styles/*": ["./src/app/styles/*"],
+        "@utils/*": ["./src/utils/*"],
+        "@views/*": ["./src/views/*"]
+      }
+    },
+    "files": ["src/org-oneteam.tsx"],
+    "include": ["src/**/*"],
+    "exclude": ["src/**/*.test*"]
+  }
