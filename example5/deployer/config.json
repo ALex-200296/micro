@@ -1,0 +1,6 @@
+{
+  "locations": {
+    "default": "import-map.json",
+    "test": "import-map-test.json"
+  }
+}

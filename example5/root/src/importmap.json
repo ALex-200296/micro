@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "@org/mfe": "http://localhost:8080/mfe/v1/main.js"
+  }
+}
