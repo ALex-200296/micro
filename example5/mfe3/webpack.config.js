@@ -18,7 +18,8 @@ module.exports = (webpackConfigEnv, argv) => {
     },
       output: {
           filename: 'main.js',
-          path: path.resolve(__dirname, 'v1'),
+          path: path.resolve(__dirname, 'v2'),
+             chunkFilename: 'static/js/[name].[contenthash].js'
         },
     // modify the webpack config however you'd like to by adding to this object
   });

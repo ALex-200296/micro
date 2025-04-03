@@ -1,8 +1,8 @@
 {
   "imports": {
-    "@org/mfe": "http://192.168.0.3:8080/mfe/v1/main.js",
-    "@org/mfe2": "http://192.168.0.3:8080/mfe2/v1/main.js",
-    "@org/sidebarParcel": "http://192.168.0.3:8080/parcelSidebar/v1/main.js",
-    "@org/mfe3": "http://192.168.0.3:8080/mfe3/v1/main.js"
+    "@org/mfe": "http://192.168.0.3:8080/mfe/v2/main.js",
+    "@org/mfe2": "http://192.168.0.3:8080/mfe2/v2/main.js",
+    "@org/sidebarParcel": "http://192.168.0.3:8080/parcelSidebar/v2/main.js",
+    "@org/mfe3": "http://192.168.0.3:8080/mfe3/v2/main.js"
   }
 }

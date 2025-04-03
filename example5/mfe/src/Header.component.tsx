@@ -6,8 +6,8 @@ const { Header } = Layout
 
 const menu = [
   {
-    label: <Link to={`/home`}>Главная страница</Link>,
-    key: 'home',
+    label: <Link to={`/infres`}>Инфресурс</Link>,
+    key: 'infres',
 
   },
   {

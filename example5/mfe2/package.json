@@ -58,7 +58,8 @@
     "react-dom": "^19.1.0",
     "single-spa": "^5.9.3",
     "single-spa-react": "^6.0.2",
-    "antd": "5.20.6"
+    "antd": "5.20.6",
+    "react-router-dom": "^6.3.0"
   },
   "types": "dist/org-mfe2.d.ts"
 }
