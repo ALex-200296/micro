@@ -1,3 +1,5 @@
+declare module '@org/sidebarParcel' 
+
 declare module "*.html" {
   const rawHtmlFile: string;
   export = rawHtmlFile;
