@@ -1,5 +1,5 @@
 {
-  "name": "@org/sidebarParcel",
+  "name": "org-sidebar-parcel",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
@@ -23,6 +23,7 @@
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
     "@babel/runtime": "^7.23.3",
+    "@originjs/vite-plugin-federation": "^1.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "babel-jest": "^27.5.1",
@@ -54,12 +55,12 @@
     "@types/webpack-env": "^1.16.2",
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
+    "antd": "5.20.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^6.3.0",
     "single-spa": "^5.9.3",
-    "single-spa-react": "^6.0.2",
-    "antd": "5.20.6",
-     "react-router-dom": "^6.3.0"
+    "single-spa-react": "^6.0.2"
   },
   "types": "dist/org-sidebarParcel.d.ts"
 }
