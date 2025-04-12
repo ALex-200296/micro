@@ -16,7 +16,7 @@ module.exports = (webpackConfigEnv, argv) => {
     devServer: {
       open: true,
       port: 9000,
-       static:'src'
+       static:'src',
     },
     // modify the webpack config however you'd like to by adding to this object
     plugins: [
