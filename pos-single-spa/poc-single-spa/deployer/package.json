@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "deploy": "import-map-deployer config.json"
+  },
+  "devDependencies": {
+    "import-map-deployer": "^7.0.0"
+  }
+}

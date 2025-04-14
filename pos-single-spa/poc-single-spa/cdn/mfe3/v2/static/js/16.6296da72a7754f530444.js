@@ -1,0 +1,2 @@
+export const __webpack_id__=16;export const __webpack_ids__=[16];export const __webpack_modules__={5016:(_,e,t)=>{t.r(e),t.d(e,{default:()=>r});var o=t(7680),c=t(4848);function r(_){return(0,c.jsx)(o.A,{})}}};
+//# sourceMappingURL=16.6296da72a7754f530444.js.map

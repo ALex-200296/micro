@@ -1,0 +1,19 @@
+<single-spa-router>
+  <route path="/">
+    <application name="@org/mfe"  props="myProp,authToken"></application>
+  </route>
+<main>
+  <route  path="/vite">
+    <application name="@org/vite"  props="myProp,authToken"></application>
+  </route>
+    <route path="/infres" >
+      <application name="@org/mfe2"  props="myProp,authToken"></application>
+    </route>
+    <route path="/oneteam">
+      <application name="@org/mfe3" props="myProp,authToken"></application>
+    </route>
+    <route path="/error">
+      <h1>404 Not Found</h1>
+    </route>
+  </main>
+</single-spa-router>
