@@ -6,14 +6,6 @@ import Parcel from 'single-spa-react/parcel';
 import { AppstoreOutlined, MailOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
 import { Outlet, Link } from 'react-router-dom';
 
-interface DataType {
-  key: string;
-  name: string;
-  age: number;
-  address: string;
-  tags: string[];
-}
-
 type MenuItem = Required<MenuProps>['items'][number] & { link?: string };
 
 const items: MenuItem[] = [

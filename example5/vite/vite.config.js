@@ -10,7 +10,8 @@ export default defineConfig(async ({ mode, command }) => {
   return {
     server: {
       port: 4101,
-      hmr: env.VITE_APP_HMR === 'true'
+      hmr: env.VITE_APP_HMR === 'true',
+      open: true,
     },
     plugins: [
       react(),

@@ -28,3 +28,6 @@ Import-map-deployer, отвечающий за чтение и записи им
 Проблемы
 1. Корень проета не видит import-map загруженный через Import-map-deployer. Решение - убедится что корень проекта скачивает импорт карту по правильным путям, папка cdn(проверить путь до версий, пример http-server --cors запускается по пути http://192.168.0.3:8080) и import-map-deployer(проверить путь до импорт карты, пример http://localhost:5000/import-map.json).
 2. Если не видно {...} в правом нижнем углу, нужно перейти в вкладку через f12 в application и добавить в LocalStorage ключ devtools и значение true
+
+## Ссылка на can i use import-map
+https://caniuse.com/?search=import-map
