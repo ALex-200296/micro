@@ -57,6 +57,13 @@
       import('@org/root-config');
     });
   </script>
+  <script type="module">
+    import RefreshRuntime from 'http://localhost:4101/@react-refresh'
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+  </script>
 
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

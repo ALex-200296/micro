@@ -14,6 +14,10 @@ const menu = [
     label: <Link to={`/oneteam`}>OneTeam</Link>,
     key: 'oneteam',
   },
+  {
+    label: <Link to={`/vite`}>Vite</Link>,
+    key: 'vite',
+  },
 ]
 
 export default function Root(props) {

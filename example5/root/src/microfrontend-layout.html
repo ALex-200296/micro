@@ -3,7 +3,7 @@
     <application name="@org/mfe"  props="myProp,authToken"></application>
   </route>
 <main>
-  <route  path="/">
+  <route  path="/vite">
     <application name="@org/vite"  props="myProp,authToken"></application>
   </route>
     <route path="/infres" >
@@ -11,6 +11,9 @@
     </route>
     <route path="/oneteam">
       <application name="@org/mfe3" props="myProp,authToken"></application>
+    </route>
+    <route path="/error">
+      <h1>404 Not Found</h1>
     </route>
   </main>
 </single-spa-router>
